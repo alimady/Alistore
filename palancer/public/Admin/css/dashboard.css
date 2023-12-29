@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+    background-color: #fff !important;
+    font-size: 14px !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+body *{
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.wrapper .col1 {
+    float: left;
+    position: relative;
+    z-index: 999;
+    width: 17%;
+}
+
+
+.wrapper .col2 {
+    float: left;
+    width: 83%;
+}
+
+.sidebar {
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.section_top {
+    background: #fdfeff;
+    box-shadow: 5 5.5rem 5rem rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+    margin: 0px auto;
+    display: block;
+    padding-top: 34px;
+}
+
+.user {
+    color: #898acc !important;
+    padding: 16px;
+    border-bottom: solid 1px #e8e8e8;
+}
+
+.user a {
+    color: #898acc;
+    font-size: 1.2rem;
+}
+
+.main {
+    margin-top: 8px;
+}
+
+.main ul  {
+    padding-bottom: 40px;
+}
+
+.main ul li {
+    margin-bottom: 4px;
+}
+
+.main ul li a {
+    color: #898acc !important;
+    display: block;
+    font-size: 1.1em;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.main i {
+    margin-right: 10px;
+}
+
+.main a:hover {
+    background: #2caaff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: #ffff !important;
+}
+
+.main li .active {
+    background: #2caaff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: #ffff !important;
+}
+
+.navbar {
+    background-color: #ffff;
+    padding: 16px;
+}
+
+.navbar a {
+    color: #898acc  !important;
+    text-decoration: none !important;
+}
+
+.page {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.page .breadcrumb {
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+
+.page .breadcrumb li {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin: 0;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.page .breadcrumb a {
+    text-decoration: none !important;
+}
+
+.panel {
+    background-color: #fff;
+    border-radius: 6px;
+    border-bottom: solid 2px #2caaff;
+    width: 100%;
+}
+
+.panel .header {
+    border-bottom: solid 1px #e8e8e8;
+}
+
+.panel .header .title {
+    display: inline-block;
+    color: #561d22;
+    font-size: 1.1em;
+    padding: 12px 16px;
+}
+
+
+.panel .header ul{
+    display: inline-block;
+    float: right;
+    margin-right: 12px;
+
+}
+ul{
+    list-style-type: none;
+    list-style: none;
+}
+
+.panel .header ul li{
+    display: inline-block;
+    padding:11px;
+    position: relative;
+
+}
+.panel .header ul li a:hover{
+   background-color: #f0f0f0;
+ }
+
+.panel .header ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    color:#333;
+    }
+    .panel .header ul li a i{
+      color: #2caaff;
+        }
+
+ .panel .header ul li ul li:hover{
+        background-color: #f0f0f0;
+        color: #222;
+        }
+.panel .header ul li  ul{
+display: none;
+float: none;
+background-color: #fff;
+position: absolute;
+width:140px;
+}
+.panel .header ul li ul li{
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+
+    }
+.panel .header ul li ul li:last-child{
+        border-bottom: 0px ;
+        }
+        .panel .header ul li:last-child{
+            margin-right:60px;
+        }
+
+.panel .header ul li ul li a{
+        display: block;
+        width: 100%;
+         }
+.panel .header ul li:hover > ul {
+        display: block;
+        }
+
+        .form_search{
+         display: none;
+        }
+        .form_search .btn{
+           width: 100%;
+           }
+
+.panel .inside {
+    padding:
+     16px;
+}
+.panel .inside .big_count{
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 5em;
+}
+
+.panel .inside .nav{
+width: 20vw;
+margin-right: 10px !important;
+}
+
+.panel .inside .nav .nav-link {
+    border: 1px solid #2caaff ;
+    margin-right: 10px !important;
+}
+
+
+
+.panel .inside .nav .nav-link:hover {
+    background-color: #2caaff;
+    color: #fff;
+}
+
+
+.modef a {
+    border-radius: 4px;
+    display: inline-block;
+    padding: 8px 12px;
+ }
+ .modef .edit {
+    background-color: #436090;
+    color: #fff;
+   }
+
+ .modef .deleted {
+  background-color: #E31330;
+  color: #fff;
+ }
+ .modef .Inventory {
+    background-color: #DDC403;
+    color: #fff;
+   }
+
+   .modef .restore {
+    background-color: #35d02c;
+    color: #fff;
+   }
+
+.mtop16 {
+    margin-top: 16px;
+}
+
+.product_gallery {
+    overflow: hidden;
+}
+
+.product_gallery .btn-submit {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-right: 1%;
+}
+
+.product_gallery .btn-submit a {
+    border: 1px dashed #6666;
+    border-radius: 4px;
+    color: #333;
+    display: block;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 12px;
+}
+
+.product_gallery .btn-submit a:hover {
+    background-color: #2caaff;
+    color: #fff;
+}
+
+
+.tumbs .tumb {
+    float: left;
+    margin-top: 16px;
+    position: relative;
+    width: 48%;
+}
+
+.tumbs .tumb a {
+    background-color: rgb(0, 0, 0, 0.5);
+    display: inline-block;
+    color: #fff;
+    bottom: 8px;
+    right: 8px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.tumbs .tumb img {
+    border-radius: 4px;
+    width: 100%;
+}
+
+.tumbs .tumb img:nth-child(odd) {
+    margin-right: 4%;
+}
+
+
+
+.page_user .mini_profile .avatar{
+    border-radius: 50%;
+    width: 150px;
+    display: block;
+    background-color: #fff;
+    margin:0 auto;
+}
+
+.page_user .mini_profile .info{
+    background-color: #fff;
+
+}
+
+.page_user .mini_profile .info span{
+       display: block;
+       font-size: 1.2em;
+       width: 100%;
+}
+
+.page_user .mini_profile .info  .title{
+   font-weight: bold;
+   margin-top: 10px;
+}
+
+.page_user .mini_profile a{
+    width:100% ;
+    margin-top:10px;
+}
+
+.slider_content{
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding:16px;
+}
+.slider_content h1{
+  font-size: 1.6em;
+  font-weight: bold;
+}
