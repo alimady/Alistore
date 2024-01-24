@@ -21,7 +21,7 @@
             </li>
            
             <li>
-                <a href="{{ url('/admin/categories/0')   }}" class="lk-categories lk-category_add lk-category_edit lk-category_delete"><i class="fas fa-folder-open"></i> Categories</a>
+                <a href="{{ url('/admin/categories')   }}" class="{{ Route::currentRouteName('categories.*')? 'active' :'' }}"><i class="fas fa-folder-open"></i> Categories</a>
             </li>
             
             <li>

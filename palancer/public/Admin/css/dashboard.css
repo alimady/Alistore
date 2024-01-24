@@ -82,7 +82,7 @@ body *{
     margin-right: 10px;
 }
 
-.main a:hover {
+.main a:hover,.active {
     background: #2caaff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     color: #ffff !important;
