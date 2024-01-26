@@ -1,8 +1,8 @@
 @extends('Admin.dashboard.layout')
-@section('title','Categories')
+@section('title','Products')
 @section('breadcrumb')
 <li class="breadcrumb-item">
-  <a href="{{ url('/admin/categories/0') }}"><i class="far fa-folder-open" style="margin-right: 4px"></i>Categories</a>
+  <a href=""><i class="far fa-folder-open" style="margin-right: 4px"></i>Products</a>
 </li>
 @endsection
 
@@ -13,13 +13,13 @@
     <div class="col-md-3">
       <div class="panel shadow">
         <div class="header">
-          <h2 class="title"><i class="fas fa-plus" style="margin-right: 4px"></i>Add Category</h2>
+          <h2 class="title"><i class="fas fa-plus" style="margin-right: 4px"></i>Add Product</h2>
         </div>
 
         <div class="inside">
 
-          {!! Form::open(['url' => '/categories','files'=>'true','class'=>'form-submit']) !!}
-          <label for="name">Category Name:</label>
+          {!! Form::open(['url' => '#','files'=>'true','class'=>'form-submit']) !!}
+          <label for="name">Product Name:</label>
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
               <i class="far fa-keyboard"></i>
@@ -27,20 +27,23 @@
             {!! Form::text('name',null,['class' => 'form-control']) !!}
           </div>
 
-          <label for="parent" class="mtop16">Parent category :</label>
-
+          <!-- <label for="parent" class="mtop16">Parent category :</label>
+           
           <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
               <i class="far fa-keyboard"></i>
             </span>
-            <select name="parent_id" class="form-select">
-              <option value="">Without category</option>
-              @foreach($categories as $cat)
-              <option value="{{ $cat->id }}">{{ $cat->name}}</option>
-              @endforeach
-            </select>
-          </div>
+            
+            
+          </div> -->
 
+          <label for="name" class="mt-3">Product Description:</label>
+          <div class="input-group ">
+            <span class="input-group-text" id="basic-addon1">
+              <i class="far fa-keyboard"></i>
+            </span>
+            {!! Form::textarea('name',null,['class' => 'form-control','rows' => 3]) !!}
+          </div> 
 
           <label for="type" class="mtop16">Status:</label>
           <div class="input-group">
@@ -70,7 +73,7 @@
         </div>
         <div class="inside">
           <nav class="nav nav-pills nav-fill">
-            <a class="nav-link" href=""><i class="fas fa-list"></i> {{ $k??'' }}</a>
+            <a class="nav-link" href=""><i class="fas fa-list"></i> --</a>
           </nav>
           <table class="table mtop16">
 
@@ -86,28 +89,30 @@
               </tr>
             </thead>
             <tbody class="categories">
-              @foreach($categories as $cat)
-              <tr>
+
+            <tr>
                 <td>
                   <img src="https://thumbs.dreamstime.com/b/businessman-icon-vector-male-avatar-profile-image-profile-businessman-icon-vector-male-avatar-profile-image-182095609.jpg" class="img-fluid">
                 </td>
 
-                <td>{{ $cat->id}}</td>
-                <td>{{ $cat->name }}</td>
-                <td>{{ $cat->parent_id }}</td>
-                <td>{{ $cat->created_at }}</td>
-                <td>{{ $cat->status }}</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+                 
 
                 <td>
                   <div class="modef">
-                    <a href="{{ route('categories.edit',$cat->id)}}" data-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="fas fa-edit"></i> </a>
-                    <a href="{{ route('categories.delete',$cat->id)}}" data-toggle="tooltip" class="delete-action" data-bs-placement="top" title="Delete"><i class="fas fa-trash-alt"></i></a>
+                    <a href="" data-toggle="tooltip" data-bs-placement="top" title="Edit"><i class="fas fa-edit"></i> </a>
+                    <a href="" data-toggle="tooltip" class="delete-action" data-bs-placement="top" title="Delete"><i class="fas fa-trash-alt"></i></a>
                     <a href="" data-toggle="tooltip" data-bs-placement="top" title="Sub categories"><i class="fas fa-list-ul"></i></a>
                   </div>
 
                 </td>
               </tr>
-              @endforeach
+
             </tbody>
 
           </table>
