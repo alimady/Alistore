@@ -3,11 +3,13 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Models\Product;
 
 class Productslist extends Component
 {
     public function render()
     {
-        return view('livewire.productslist');
+        $products=Product::all();
+         return view('livewire.productslist',compact('products'));
     }
 }
